@@ -19,6 +19,9 @@ android {
     targetSdk = 35
     versionCode = 1
     versionName = "1.0"
+  ksp {
+        arg("room.generateKotlin", "true")
+      } 
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
