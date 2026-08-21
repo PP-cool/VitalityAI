@@ -9,6 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./android # Yahan apne subfolder ka naam likhein (e.g. android ya app)
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -30,4 +34,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
-          path: app/build/outputs/apk/debug/*.apk
+          path: android/app/build/outputs/apk/debug/*.apk # Path me bhi folder ka naam add karein
