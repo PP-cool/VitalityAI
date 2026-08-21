@@ -10,11 +10,11 @@ plugins {
 }
 
 android {
-  namespace = "com.aistudio.healthhabit.zkrtpq"
+  namespace = "com.example"
   compileSdk = 35
 
   defaultConfig {
-    applicationId = "com.aistudio.healthhabit.zkrtpq"
+    applicationId = "com.example"
     minSdk = 24
     targetSdk = 35
     versionCode = 1
